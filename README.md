@@ -1,4 +1,4 @@
-# Dispplay Coutry Information of Asia Region
+# Display Coutry Information of Asia Region
 This is web app where we display country details.
 to get coutry data we use RESTCoutry(https://restcoutries.eu/)
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
