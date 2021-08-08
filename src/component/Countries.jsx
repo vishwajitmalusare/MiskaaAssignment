@@ -43,9 +43,18 @@ const Countries = () => {
                         <h4>Capital:  <span> {capital} </span> </h4>
                         <h4> Region: <span> {region} </span> </h4>
                         <h4> SubRegion: <span> {subregion} </span> </h4>
-                        <h4> Language: <span> {languages[0].name} </span>
+                        <h4> Language: <span>
+                            {languages.map((language) => {
+                                return (
+                                    <ul key= {language}>
+                                        {language.name}
+                                    </ul>
+                                )
+                            })}
+                        </span>
                         </h4>
                         <h4> Borders: 
+                            <span>
                             {borders.map((border) => {
                                 return (
                                     <ul key={border}>
@@ -53,6 +62,7 @@ const Countries = () => {
                                     </ul>
                                 )
                             })}
+                            </span>
                         </h4>
                         <h4> Population: <span> {population} </span></h4>
                     </div>
