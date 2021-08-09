@@ -1,21 +1,19 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  img {
-    max-width: 20%;
-  }
-  
-.grid {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    padding: 10px;
-  }
+.wrapper{ 
+  flex-grow: 1;
+  background-color: aqua;
+}
 
-  .grid-item {
-      border: 1px solid;
-      padding: 10px
-  }
-  
+.content {
+  display: flex;
+  flex-direction: column;
+  background-color: blueviolet;
+  /* margin: auto; */
+  width: 25%;
+  height: 25%;
+}
